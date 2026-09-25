@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Computers & Enterprices</title>
+
+  <!-- Google Font: we use Poppins for headings/body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Our own CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================= -->
+  <!-- HEADER / NAVIGATION BAR       -->
+  <!-- ============================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- LOGO SECTION
+           Replace the text/icon below with your real logo image once you have the file:
+           <img src="logo.png" alt="Angel Computers & Enterprices" class="logo-img" />
+      -->
+      <div class="logo">
+        <!-- Your logo image. Just point src at your file name. -->
+        <img src="ace/angel.jpg" alt="Angel Computers & Enterprices" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">ANGEL COMPUTERS</span>
+          <span class="logo-subtitle">& ENTERPRISES</span>
+        </div>
+      </div>
+
+      <!-- NAV LINKS -->
+      <nav class="nav-links">
+        <a href="#home" class="active">HOME</a>
+        <a href="#aboutus">ABOUT US</a>
+        <a href="#ourservices">SERVICES</a>
+        <a href="#ourproducts">PRODUCTS</a>
+        <a href="#cctv">CCTV</a>
+        <a href="#networking">NETWORKING</a>
+      </nav>
+
+      <!-- CONTACT BUTTON -->
+     <a href="#contact" class="btn btn-contact" id="openContactModal">CONTACT US</a>
+
+      <!-- Hamburger menu for mobile (JS toggles this) -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================= -->
+  <!-- HERO SECTION                  -->
+  <!-- ============================= -->
+  <section class="hero" id="home">
+
+    <!-- ===================================================
+         BACKGROUND VIDEO SLOT
+         To add your own background video:
+         1. Put your video file (e.g. "background.mp4") in the same folder as this HTML file.
+         2. Uncomment the <video> tag below.
+         3. Change the src="background.mp4" to your file name.
+         The gray overlay div stays -- it darkens the video so text stays readable.
+    =================================================== -->
+    <div class="hero-video-wrapper">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="acev/background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-heading">
+        <span class="line line-1">CONNECT</span>
+        <span class="line line-2">THE <span class="highlight">FUTURE</span></span>
+        <span class="line line-3 highlight">WITH US</span>
+      </h1>
+
+      <p class="hero-subtext">
+        Blazing-fast internet, smart security &amp; enterprises networking
+        solutions crafted for the Nilgiris and beyond.
+      </p>
+
+      <!-- STATS BAR -->
+      <div class="stats-bar">
+        <div class="stat">
+          <span class="stat-number" data-target="2000" data-suffix="+">0</span>
+          <span class="stat-label">CONNECTIONS</span>
+        </div>
+
+        <div class="stat">
+          <span class="stat-number" data-target="19" data-suffix="+">0</span>
+          <span class="stat-label">YEARS EXPERIENCE</span>
+        </div>
+
+        <div class="stat">
+          <span class="stat-number" data-target="3" data-suffix="">0</span>
+          <span class="stat-label">ISP PROVIDERS</span>
+        </div>
+
+        <a href="#ourservices" class="btn btn-explore">EXPLORE OUR SERVICE</a>
+      </div>
+    </div>
+  </section>
+
+     <!-- ============================= -->
+  <!-- BSNL PLAN DETAILS SECTION     -->
+  <!-- ============================= -->
+  <section class="bsnl-detail" id="bsnl-plans">
+    <div class="bsnl-detail-container">
+
+      <div class="bsnl-detail-header reveal">
+        <h2 class="bsnl-detail-title">ABOUT <span class="highlight">OUR SERVICES</span></h2>
+        <p class="bsnl-detail-subtext">
+          Bringing high-speed connectivity to homes, businesses, and
+          government institutions across the Nilgiris.
+        </p>
+      </div>
+
+      <div class="bsnl-detail-grid reveal">
+
+        <!-- LEFT: SUMMARY CARD -->
+        <div class="bsnl-summary-card">
+          <div class="bsnl-summary-logo">
+            <img src="ace/bsnl-logo.jpg" alt="BSNL logo" />
+          </div>
+          <h3 class="bsnl-summary-title">BSNL CONNECTION</h3>
+          <p class="bsnl-summary-text">
+            High-speed FTTH broadband providing reliable internet
+            connectivity for homes, businesses, and institutions,
+            with options for unlimited data and voice services.
+          </p>
+          <ul class="bsnl-summary-list">
+            <li>Unlimited data plans</li>
+            <li>Fibre connections</li>
+            <li>24/7 support</li>
+          </ul>
+          <a href="#bsnl-plans" class="btn btn-bsnl-view">VIEW PLANS</a>
+        </div>
+
+        <!-- RIGHT: EXPANDED PLAN PANEL -->
+        <div class="bsnl-panel">
+          <h3 class="bsnl-panel-title"><span class="highlight">BSNL</span> BHARAT FIBRE</h3>
+          <p class="bsnl-panel-desc">
+            BSNL Bharat Fibre (FTTH) provides fast, reliable and
+            affordable fibre-optic internet connectivity for homes
+            and businesses. With broadband plans starting from
+            ₹399 per month, customers can choose from different
+            speed and data options based on their requirements.
+            Bharat Fibre is suitable for online classes, work from
+            home, video conferencing, streaming, gaming, browsing
+            and connecting multiple devices. Selected plans may
+            also include unlimited voice calling, OTT subscriptions
+            and IPTV services. With fibre-based technology and
+            flexible broadband options, BSNL Bharat Fibre is a
+            practical choice for modern digital connectivity.
+          </p>
+
+          <div class="bsnl-price-cards">
+            <div class="bsnl-price-card">
+              <span class="bsnl-price">₹399/MONTH</span>
+              <p>Offers up to 60 Mbps speed with 3300 GB (3.3 TB) of high-speed data.</p>
+            </div>
+            <div class="bsnl-price-card">
+              <span class="bsnl-price">₹599/MONTH</span>
+              <p>Provides up to 100 Mbps speed with 4000 GB data, dropping to 2 Mbps after the limit.</p>
+            </div>
+            <div class="bsnl-price-card">
+              <span class="bsnl-price">₹799/MONTH</span>
+              <p>Provides up to 150 Mbps speed with 6000 GB data, dropping to 2 Mbps after the limit.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ============================= -->
+  <!-- ABOUT US SECTION              -->
+  <!-- ============================= -->
+  <section class="about-us" id="aboutus">
+    <img src="ace/wave-bg.png" alt="" class="about-wave-bg" />
+
+    <div class="about-container">
+
+      <!-- LEFT: STORE PHOTO -->
+      <div class="about-photo-wrap">
+        <img src="ace/about-store.png" alt="Angel Computers store front" class="about-photo" />
+      </div>
+
+      <!-- RIGHT: TEXT + FEATURE CARDS -->
+      <div class="about-right">
+
+        <div class="about-text">
+          <h2 class="about-heading">ABOUT <span class="highlight">US</span></h2>
+          <p class="about-desc">
+            We are a trusted Internet Service Provider and Technology
+            Solutions company offering reliable connectivity, computer
+            sales and services, and complete networking solutions. We
+            specialize in Wi-Fi and Fiber Optic internet connections,
+            providing dependable solutions for homes, businesses, and
+            organizations.
+          </p>
+          <p class="about-desc">
+            Our services also include Wi-Fi router setup, network
+            installation, computer sales and maintenance, CCTV camera
+            installation, and technical support. With a focus on
+            quality, reliability, and customer satisfaction, we help
+            our customers stay connected, secure, and productive with
+            the right technology solutions.
+          </p>
+        </div>
+
+        <div class="about-cards">
+
+          <!-- EXPERIENCE CARD -->
+          <div class="about-card">
+            <div class="about-icon-wrap">
+              <img src="ace/icon-experience.png" alt="Experience icon" class="about-icon" />
+            </div>
+            <h3 class="about-card-title highlight">EXPERIENCE</h3>
+            <p class="about-card-text">
+              With strong experience in Internet services, fiber
+              networking, computer solutions, Wi-Fi setup, and CCTV
+              installation, we provide professional solutions tailored
+              to every customer's needs.
+            </p>
+          </div>
+
+          <!-- RELIABILITY CARD -->
+          <div class="about-card">
+            <div class="about-icon-wrap">
+              <img src="ace/icon-support.jpg" alt="Reliability icon" class="about-icon" />
+            </div>
+            <h3 class="about-card-title highlight">RELIABILITY</h3>
+            <p class="about-card-text">
+              We focus on stable connectivity, quality products, and
+              dependable technical support, ensuring our customers
+              receive reliable service they can count on.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ============================= -->
+  <!-- OUR SERVICES (dark, numbered) -->
+  <!-- ============================= -->
+  <section class="ourserv" id="ourservices">
+    <div class="ourserv-container">
+
+      <span class="ourserv-side-label">WHAT WE DO</span>
+
+      <!-- LEFT: HEADING + SERVICE LIST -->
+      <div class="ourserv-left reveal">
+        <h2 class="ourserv-heading">Our <span class="ourserv-highlight-pill">Services</span></h2>
+        <p class="ourserv-sub">
+          We offer complete computer, printer, and CCTV services
+          designed to keep your devices and systems running smoothly.
+        </p>
+
+        <div class="ourserv-list">
+
+          <button class="ourserv-item active" data-desc="Professional laptop troubleshooting, repair, maintenance, hardware replacement, and performance optimization.">
+            <span class="ourserv-num">01</span>
+            <span class="ourserv-name">Laptop Service</span>
+            <span class="ourserv-arrow">→</span>
+          </button>
+
+          <button class="ourserv-item" data-desc="Complete desktop computer servicing, troubleshooting, cleaning, repair, and hardware maintenance.">
+            <span class="ourserv-num">02</span>
+            <span class="ourserv-name">System Service</span>
+            <span class="ourserv-arrow">→</span>
+          </button>
+
+          <button class="ourserv-item" data-desc="UPS installation, battery replacement, configuration, maintenance, and reliable power backup solutions.">
+            <span class="ourserv-num">03</span>
+            <span class="ourserv-name">UPS Service &amp; Setup</span>
+            <span class="ourserv-arrow">→</span>
+          </button>
+
+          <button class="ourserv-item" data-desc="Printer installation, configuration, troubleshooting, maintenance, and repair for home and business use.">
+            <span class="ourserv-num">04</span>
+            <span class="ourserv-name">Printer Service</span>
+            <span class="ourserv-arrow">→</span>
+          </button>
+
+          <button class="ourserv-item" data-desc="Professional toner refilling and cartridge servicing to help maintain print quality and reduce printing costs.">
+            <span class="ourserv-num">05</span>
+            <span class="ourserv-name">Toner Refilling</span>
+            <span class="ourserv-arrow">→</span>
+          </button>
+
+          <button class="ourserv-item" data-desc="Complete CCTV installation, camera positioning, DVR/NVR setup, cabling, configuration, and remote monitoring setup.">
+            <span class="ourserv-num">06</span>
+            <span class="ourserv-name">CCTV Camera Installation</span>
+            <span class="ourserv-arrow">→</span>
+          </button>
+
+          <button class="ourserv-item" data-desc="Upgrade your computer with additional RAM, SSD/storage, graphics cards, processors, and other compatible components for improved performance.">
+            <span class="ourserv-num">07</span>
+            <span class="ourserv-name">System Upgradation</span>
+            <span class="ourserv-arrow">→</span>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- MIDDLE: VIDEO -->
+      <div class="ourserv-video-wrap reveal">
+        <!-- Put your service/technician video in assets and update the src below -->
+        <video class="ourserv-video" autoplay muted loop playsinline>
+          <source src="acev/services-showcase.mp4" type="video/mp4">
+        </video>
+        <p class="ourserv-video-caption" id="ourservDesc">
+          Professional laptop troubleshooting, repair, maintenance, hardware replacement, and performance optimization.
+        </p>
+      </div>
+
+      <!-- RIGHT: TWO CTA CARDS -->
+      <div class="ourserv-right reveal">
+
+        <div class="ourserv-cta-card ourserv-cta-dark">
+          <p>Curious how we keep your systems running smoothly?</p>
+          <a href="#about" class="ourserv-cta-link">
+            See how we work <span class="ourserv-cta-arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="ourserv-cta-card ourserv-cta-orange">
+          <p>Need expert help with your computers, printers, or CCTV?</p>
+          <a href="#contact" class="ourserv-cta-link">
+            Talk to our expert <span class="ourserv-cta-arrow-circle">↗</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+     <!-- ============================= -->
+  <!-- NETWORKING & INFRASTRUCTURE   -->
+  <!-- (Dark tech theme, v2)         -->
+  <!-- ============================= -->
+  <section class="network-v2" id="networking">
+
+    <!-- Animated node/line background -->
+    <canvas class="network-canvas" id="networkCanvas"></canvas>
+
+    <div class="network-v2-container">
+
+      <div class="network-v2-header">
+        <span class="network-v2-tag">◆ INFRASTRUCTURE SERVICES</span>
+        <h2 class="network-v2-title">NETWORKING &amp; <span class="highlight">INFRASTRUCTURE SOLUTIONS</span></h2>
+        <p class="network-v2-subtext">
+          Professional network design, installation, and support for
+          homes, offices, schools, colleges, and businesses.
+        </p>
+      </div>
+
+      <!-- SERVICE LIST -->
+      <div class="network-v2-list">
+
+        <div class="network-v2-item reveal">
+          <span class="network-v2-num">01</span>
+          <div class="network-v2-hex">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+              <path d="M10 6.5H14M6.5 10V14M17.5 10V14M10 17.5H14"/>
+            </svg>
+          </div>
+          <div class="network-v2-body">
+            <h3>LAN INFRASTRUCTURE</h3>
+            <p>Structured LAN cabling, network design, installation, and ongoing maintenance for reliable wired connectivity.</p>
+          </div>
+        </div>
+
+        <div class="network-v2-item reveal">
+          <span class="network-v2-num">02</span>
+          <div class="network-v2-hex">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M2 8.5C7.5 3.5 16.5 3.5 22 8.5"/>
+              <path d="M5.5 12C9 9 15 9 18.5 12"/>
+              <path d="M9 15.5C10.9 13.8 13.1 13.8 15 15.5"/>
+              <circle cx="12" cy="19" r="1.4" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <div class="network-v2-body">
+            <h3>WI-FI NETWORK SOLUTIONS</h3>
+            <p>Reliable Wi-Fi setup, access point installation, coverage optimization, and full network configuration.</p>
+          </div>
+        </div>
+
+        <div class="network-v2-item reveal">
+          <span class="network-v2-num">03</span>
+          <div class="network-v2-hex">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="6" rx="1.2"/>
+              <rect x="3" y="15" width="18" height="6" rx="1.2"/>
+              <circle cx="7" cy="6" r="0.9" fill="currentColor" stroke="none"/>
+              <circle cx="7" cy="18" r="0.9" fill="currentColor" stroke="none"/>
+              <path d="M11 6H17M11 18H17"/>
+            </svg>
+          </div>
+          <div class="network-v2-body">
+            <h3>SERVER SETUP &amp; MANAGEMENT</h3>
+            <p>Server installation, configuration, network integration, and proactive maintenance for smooth operations.</p>
+          </div>
+        </div>
+
+        <div class="network-v2-item reveal">
+          <span class="network-v2-num">04</span>
+          <div class="network-v2-hex">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="9" width="20" height="6" rx="1.2"/>
+              <path d="M6 9V5.5H18V9M6 15V18.5H18V15"/>
+              <circle cx="7" cy="12" r="0.8" fill="currentColor" stroke="none"/>
+              <circle cx="12" cy="12" r="0.8" fill="currentColor" stroke="none"/>
+              <circle cx="17" cy="12" r="0.8" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <div class="network-v2-body">
+            <h3>SWITCHES &amp; ROUTERS</h3>
+            <p>Professional installation, configuration, and management of network switches and routers for peak performance.</p>
+          </div>
+        </div>
+
+        <div class="network-v2-item reveal">
+          <span class="network-v2-num">05</span>
+          <div class="network-v2-hex">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="4" width="8" height="6" rx="1"/>
+              <rect x="14" y="4" width="8" height="6" rx="1"/>
+              <rect x="2" y="14" width="8" height="6" rx="1"/>
+              <rect x="14" y="14" width="8" height="6" rx="1"/>
+            </svg>
+          </div>
+          <div class="network-v2-body">
+            <h3>SCHOOL &amp; COLLEGE COMPUTER LABS</h3>
+            <p>Complete lab setup including systems, LAN networking, internet connectivity, switches, routers, and maintenance.</p>
+          </div>
+        </div>
+
+        <div class="network-v2-item reveal">
+          <span class="network-v2-num">06</span>
+          <div class="network-v2-hex">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2L14 6L18.5 6.8L15.5 10.2L16.2 14.7L12 12.7L7.8 14.7L8.5 10.2L5.5 6.8L10 6Z"/>
+              <path d="M6 19C6 16.8 8.7 15 12 15C15.3 15 18 16.8 18 19"/>
+            </svg>
+          </div>
+          <div class="network-v2-body">
+            <h3>NETWORK MAINTENANCE &amp; SUPPORT</h3>
+            <p>Troubleshooting, upgrades, performance optimization, and ongoing technical support whenever you need it.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CALL TO ACTION -->
+      <div class="network-v2-cta reveal">
+        <h4>BUILD YOUR NETWORK <span class="highlight">WITH US</span></h4>
+        <p>From a single office to a full campus, we design and install networks that just work.</p>
+        <a href="#contact" class="btn-network-v2-cta">
+          <span>GET A NETWORKING SOLUTION</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M5 12H19M13 6L19 12L13 18"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- ============================= -->
+  <!-- CCTV SETUP & SECURITY         -->
+  <!-- ============================= -->
+  <section class="cctv" id="cctv">
+
+    <!-- Faded installer photo, diagonally clipped -->
+    <div class="cctv-bg-photo">
+      <img src="ace/cctv-bg.png" alt="" />
+    </div>
+
+    <div class="cctv-container">
+
+      <div class="cctv-left reveal">
+        <h2 class="cctv-heading">
+          <span class="highlight">CCTV SETUP</span> &amp; SECURITY
+        </h2>
+        <p class="cctv-tagline">Reliable assistance whenever you need it.</p>
+
+        <p class="cctv-desc">
+          We are a trusted Internet Service Provider and Technology
+          Solutions Company offering reliable connectivity, computer
+          sales and services, and complete networking solutions. We
+          specialize in Wi-Fi and Fiber Optic Internet connections,
+          providing dependable solutions for homes, businesses, and
+          organizations.
+        </p>
+
+        <p class="cctv-desc">
+          Our services also include Wi-Fi router setup, network
+          installation, computer sales and maintenance, CCTV camera
+          installation, and technical support. With a focus on
+          quality, reliability, and customer satisfaction, we help
+          our customers stay connected, secure, and productive with
+          the right technology solutions.
+        </p>
+
+        <div class="cctv-btn-row">
+          <span class="cctv-quote-pill">
+            <span class="highlight">"CLEAR VISION.</span> STRONG PROTECTION."
+          </span>
+          <a href="#contact" class="btn btn-cctv-quote">GET A QUOTE</a>
+        </div>
+      </div>
+
+      <div class="cctv-right reveal">
+        <img src="ace/cctv.png" alt="CCTV camera cluster" class="cctv-image" />
+      </div>
+
+    </div>
+  </section>
+
+    <!-- ============================= -->
+  <!-- WHY CCTV SERVICE MATTERS      -->
+  <!-- ============================= -->
+  <section class="amc" id="amc">
+    <div class="amc-container">
+
+      <!-- TOP DARK BAR: 5 ICON HIGHLIGHTS -->
+      <div class="amc-top-bar reveal">
+        <h3 class="amc-top-title">WHY CCTV SERVICE IS IMPORTANT?</h3>
+        <div class="amc-top-icons">
+
+          <div class="amc-top-item">
+            <div class="amc-top-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L20 5V11C20 16 16.5 20.2 12 22C7.5 20.2 4 16 4 11V5L12 2Z"/><path d="M8.5 12L11 14.5L16 9"/></svg>
+            </div>
+            <span>24/7 SUPPORT</span>
+          </div>
+
+          <div class="amc-top-item">
+            <div class="amc-top-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="14" height="10" rx="2"/><path d="M16 10L22 7V17L16 14"/></svg>
+            </div>
+            <span>HD CAMERA INSTALLATION</span>
+          </div>
+
+          <div class="amc-top-item">
+            <div class="amc-top-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4C10 4 14 8 14 14M4 9C8 9 11 12 11 16M4 14C6 14 8 16 8 18"/><circle cx="4" cy="20" r="1.4" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <span>CLEAN CABLE MANAGEMENT</span>
+          </div>
+
+          <div class="amc-top-item">
+            <div class="amc-top-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M9 18H15"/></svg>
+            </div>
+            <span>REMOTE MONITORING</span>
+          </div>
+
+          <div class="amc-top-item">
+            <div class="amc-top-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2V5M12 19V22M22 12H19M5 12H2M19 5L17 7M7 17L5 19M19 19L17 17M7 7L5 5"/></svg>
+            </div>
+            <span>PROFESSIONAL SETUP</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MIDDLE: CHECKLIST + PHOTO -->
+      <div class="amc-middle reveal">
+        <div class="amc-checklist-wrap">
+          <h3 class="amc-checklist-title">OUR <span class="highlight">SERVICE INCLUDES</span></h3>
+          <ul class="amc-checklist">
+            <li>Secure Recording — reliable DVR/NVR setup for video storage</li>
+            <li>Maintenance &amp; Service — regular support to keep systems running smoothly</li>
+            <li>Complete Coverage — strategically positioned cameras for better visibility</li>
+            <li>Reliable Connectivity — proper networking and power setup for CCTV systems</li>
+            <li>Home &amp; Business Security — solutions designed for different spaces</li>
+            <li>HD Camera Installation — clear and dependable surveillance</li>
+            <li>Clean Cable Management — neat, organized, professional installation</li>
+            <li>Remote Monitoring — keep an eye on your property from anywhere</li>
+          </ul>
+        </div>
+
+       <div class="amc-photo-wrap">
+  <video class="amc-photo" autoplay muted loop playsinline>
+    <source src="acev/cctv.mp4" type="video/mp4">
+  </video>
+</div>
+
+      <!-- BOTTOM: ORANGE BANNER + SUPPORT CARD -->
+
+
+      </div>
+
+    </div>
+  </section>
+
+    <!-- ============================= -->
+  <!-- HIGH QUALITY PRODUCTS         -->
+  <!-- ============================= -->
+  <section class="products" id="products">
+    <div class="products-header reveal">
+      <h2 class="products-title">HIGH QUALITY <span class="highlight">PRODUCTS</span></h2>
+    </div>
+
+    <!-- The track is duplicated once (see the two identical groups
+         inside) so the scrolling loop has no visible seam or jump -->
+    <div class="products-track-wrap">
+      <div class="products-track">
+
+        <div class="products-group">
+          <div class="product-card">
+            <img src="ace/cam1.jpg" alt="Hikvision bullet camera" />
+            <span class="product-name">HIKVISION BULLET CAM</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam3.jpg" alt="Wi-Fi PTZ camera" />
+            <span class="product-name">WI-FI PTZ CAMERA</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam4.jpg" alt="Solar dual lens camera" />
+            <span class="product-name">SOLAR DUAL-LENS CAM</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam5.jpg" alt="Solar PTZ camera" />
+            <span class="product-name">SOLAR PTZ CAMERA</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam6.jpg" alt="Speed dome camera" />
+            <span class="product-name">SPEED DOME CAMERA</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam7.jpg" alt="IR bullet camera" />
+            <span class="product-name">NIGHT VISION IR CAM</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam8.jpg" alt="Axis box camera" />
+            <span class="product-name">OUTDOOR BOX CAMERA</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam9.jpg" alt="CP Plus dome camera" />
+            <span class="product-name">CP PLUS DOME CAM</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam10.jpg" alt="Hikvision dome camera" />
+            <span class="product-name">HIKVISION DOME CAM</span>
+          </div>
+        </div>
+
+        <!-- Duplicate group (identical, aria-hidden) — creates the seamless loop -->
+        <div class="products-group" aria-hidden="true">
+          <div class="product-card">
+            <img src="ace/cam1.jpg" alt="" />
+            <span class="product-name">HIKVISION BULLET CAM</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam3.jpg" alt="" />
+            <span class="product-name">WI-FI PTZ CAMERA</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam4.jpg" alt="" />
+            <span class="product-name">SOLAR DUAL-LENS CAM</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam5.jpg" alt="" />
+            <span class="product-name">SOLAR PTZ CAMERA</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam6.jpg" alt="" />
+            <span class="product-name">SPEED DOME CAMERA</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam7.jpg" alt="" />
+            <span class="product-name">NIGHT VISION IR CAM</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam8.jpg" alt="" />
+            <span class="product-name">OUTDOOR BOX CAMERA</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam9.jpg" alt="" />
+            <span class="product-name">CP PLUS DOME CAM</span>
+          </div>
+          <div class="product-card">
+            <img src="ace/cam10.jpg" alt="" />
+            <span class="product-name">HIKVISION DOME CAM</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ============================= -->
+  <!-- OUR PRODUCTS SECTION          -->
+  <!-- ============================= -->
+  <section class="ourproducts" id="ourproducts">
+    <img src="ace/wave-bg-products.png" alt="" class="ourproducts-bg" />
+
+    <div class="ourproducts-container">
+
+      <h2 class="ourproducts-title reveal">OUR <span class="highlight">PRODUCTS</span></h2>
+
+      <div class="ourproducts-grid reveal">
+
+        <div class="ourproducts-card"> 
+          <div class="ourproducts-photo">
+            <img src="ace/storage devices.png" alt="Storage devices" />
+          </div>
+          <span class="ourproducts-label">STORAGE DEVICES</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/keyboard & mouse.jpg" alt="Keyboard and mouse" />
+          </div>
+          <span class="ourproducts-label">KEYBOARD &amp; MOUSE</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/connectors.jpg" alt="Connectors and converters" />
+          </div>
+          <span class="ourproducts-label">CONNECTORS &amp; CONVERTERS</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/network extender.jpg" alt="Network extender" />
+          </div>
+          <span class="ourproducts-label">NETWORK EXTENDER</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/routers.jpg" alt="Router" />
+          </div>
+          <span class="ourproducts-label">ROUTER</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/switches.jpg" alt="Switches" />
+          </div>
+          <span class="ourproducts-label">SWITCHES</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/modem.jpg" alt="Modem" />
+          </div>
+          <span class="ourproducts-label">MODEM</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/printer.jpg" alt="Printer and accessories" />
+          </div>
+          <span class="ourproducts-label">PRINTER &amp; ACCESSORIES</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/laptop.jpg" alt="Laptop and accessories" />
+          </div>
+          <span class="ourproducts-label">LAPTOP &amp; ACCESSORIES</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/monitor.jpg" alt="Monitor and CPU" />
+          </div>
+          <span class="ourproducts-label">MONITOR &amp; CPU</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/motherboard.jpg" alt="Motherboard" />
+          </div>
+          <span class="ourproducts-label">MOTHERBOARD</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/smps.jpg" alt="SMPS" />
+          </div>
+          <span class="ourproducts-label">SMPS</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/processor.jpg" alt="Processor and fan" />
+          </div>
+          <span class="ourproducts-label">PROCESSOR / FAN</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/graphics card.jpg" alt="Graphics card" />
+          </div>
+          <span class="ourproducts-label">GRAPHICS CARD</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/cabinet.jpg" alt="Cabinet" />
+          </div>
+          <span class="ourproducts-label">CABINET</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/ups.webp" alt="Inverter, UPS and battery" />
+          </div>
+          <span class="ourproducts-label">INVERTER, UPS &amp; BATTERY</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/cat6.jpg" alt="CAT6 and CCTV cables" />
+          </div>
+          <span class="ourproducts-label">CAT6 &amp; CCTV CABLES</span>
+        </div>
+
+        <div class="ourproducts-card">
+          <div class="ourproducts-photo">
+            <img src="ace/DVR.jpg" alt="DVR and NVR" />
+          </div>
+          <span class="ourproducts-label">DVR / NVR</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ============================= -->
+  <!-- FIND US / LOCATION SECTION    -->
+  <!-- ============================= -->
+  <section class="findus" id="findus">
+    <div class="findus-container">
+
+      <div class="findus-header reveal">
+        <h2 class="findus-title">GOT A QUESTION? <span class="highlight">DROP BY ANYTIME</span></h2>
+        <p class="findus-quote">"We're not hard to find, and even harder to forget."</p>
+      </div>
+
+      <div class="findus-grid reveal">
+
+        <!-- LEFT: BUSINESS INFO CARD -->
+        <div class="findus-card">
+
+          <div class="findus-photo">
+            <img src="ace/about-store.png" alt="Angel Computers and Enterprises storefront" />
+          </div>
+
+          <div class="findus-body">
+            <h3 class="findus-biz-name">Angel Computers and Enterprises</h3>
+            
+            <div class="findus-rating">
+              <span class="findus-stars">★★★★★</span>
+              <span class="findus-score">4.8</span>
+              <span class="findus-reviews">(52 reviews)</span>
+            </div>
+
+            <span class="findus-tag">Computer Service</span>
+
+            <div class="findus-address">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22C12 22 19 15.5 19 10C19 5.6 15.9 2 12 2C8.1 2 5 5.6 5 10C5 15.5 12 22 12 22Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              <p>1st Floor, S.S. Complex, 68-B, Mount Rd, near YMCA Corner, Kumaran Nagar, Coonoor, Tamil Nadu 643102</p>
+            </div>
+
+            <div class="findus-hours">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7V12L15.5 14.5"/></svg>
+              <span>Opens 9:30 AM daily</span>
+            </div>
+
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Angel+Computers+and+Enterprises+Coonoor" target="_blank" rel="noopener" class="btn btn-findus-directions">
+              GET DIRECTIONS
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: EMBEDDED GOOGLE MAP -->
+        <div class="findus-map-wrap">
+          <iframe
+            class="findus-map"
+            src="https://www.google.com/maps?q=Angel+Computers+and+Enterprises,+Mount+Rd,+Coonoor,+Tamil+Nadu+643102&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Angel Computers and Enterprises location">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ============================= -->
+  <!-- ENQUIRY FORM SECTION          -->
+  <!-- ============================= -->
+  <section class="enquiry" id="contact">
+    <img src="ace/enquiry.png" alt="" class="enquiry-bg" />
+
+    <div class="enquiry-container reveal">
+
+      <div class="enquiry-header">
+        <h2 class="enquiry-title">GET IN <span class="highlight">TOUCH</span></h2>
+        <p class="enquiry-subtext">Have a question or need a quote? Send us your details and we'll get back to you shortly.</p>
+      </div>
+
+      <div class="enquiry-card">
+
+        <!-- 
+          IMPORTANT: replace YOUR_FORM_ID below with the endpoint
+          Formspree gives you after you create a free form at
+          https://formspree.io — e.g. https://formspree.io/f/abcd1234
+        -->
+        <form class="enquiry-form" id="enquiryForm" action="https://formspree.io/f/maenbvvd" method="POST" novalidate>
+
+          <div class="enquiry-row">
+            <div class="enquiry-field">
+              <label for="enqName">Full Name</label>
+              <input type="text" id="enqName" name="name" placeholder="Your name" required minlength="2" />
+              <span class="enquiry-error" id="errName"></span>
+            </div>
+
+            <div class="enquiry-field">
+              <label for="enqPhone">Phone Number</label>
+              <input type="tel" id="enqPhone" name="phone" placeholder="10-digit mobile number" required />
+              <span class="enquiry-error" id="errPhone"></span>
+            </div>
+          </div>
+
+          <div class="enquiry-row">
+            <div class="enquiry-field">
+              <label for="enqEmail">Email Address</label>
+              <input type="email" id="enqEmail" name="email" placeholder="you@example.com" required />
+              <span class="enquiry-error" id="errEmail"></span>
+            </div>
+
+            <div class="enquiry-field">
+              <label for="enqService">Service Needed</label>
+              <select id="enqService" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Internet / ISP Connection">Internet / ISP Connection</option>
+                <option value="CCTV Installation">CCTV Installation</option>
+                <option value="Networking & Infrastructure">Networking &amp; Infrastructure</option>
+                <option value="Computer Sales & Service">Computer Sales &amp; Service</option>
+                <option value="AMC / Maintenance">AMC / Maintenance</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="enquiry-error" id="errService"></span>
+            </div>
+          </div>
+
+          <div class="enquiry-field enquiry-field-full">
+            <label for="enqMessage">Message</label>
+            <textarea id="enqMessage" name="message" rows="4" placeholder="Tell us what you need..." required minlength="10"></textarea>
+            <span class="enquiry-error" id="errMessage"></span>
+          </div>
+
+          <!-- Honeypot field: invisible to real users, but bots often
+               auto-fill every field they find. If this has a value on
+               submit, we quietly treat it as spam. -->
+          <input type="text" name="_gotcha" class="enquiry-honeypot" tabindex="-1" autocomplete="off" />
+
+          <button type="submit" class="btn btn-enquiry-submit" id="enquirySubmitBtn">
+            <span class="btn-text">SEND ENQUIRY</span>
+            <span class="btn-spinner"></span>
+          </button>
+
+          <p class="enquiry-status" id="enquiryStatus"></p>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ============================= -->
+  <!-- FOOTER                        -->
+  <!-- ============================= -->
+  <footer class="site-footer">
+
+    <!-- Illustrated skyline strip (pure inline SVG, no image file needed) -->
+    <div class="footer-skyline">
+      <svg viewBox="0 0 1300 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- cloud -->
+        <ellipse cx="620" cy="26" rx="34" ry="12" fill="#E4E4E4"/>
+        <ellipse cx="648" cy="20" rx="22" ry="10" fill="#E4E4E4"/>
+
+        <!-- building group 1 -->
+        <rect x="0" y="60" width="70" height="90" fill="#EDEDED"/>
+        <rect x="10" y="72" width="14" height="14" fill="var(--color-orange)"/>
+        <rect x="30" y="72" width="14" height="14" fill="#D9D9D9"/>
+        <rect x="10" y="96" width="14" height="14" fill="#D9D9D9"/>
+        <rect x="30" y="96" width="14" height="14" fill="var(--color-orange)"/>
+
+        <rect x="80" y="90" width="60" height="60" fill="#E4E4E4"/>
+        <rect x="90" y="100" width="12" height="16" fill="var(--color-orange)"/>
+        <rect x="112" y="100" width="12" height="16" fill="#D9D9D9"/>
+
+        <rect x="150" y="70" width="50" height="80" fill="#EDEDED"/>
+        <polygon points="150,70 175,50 200,70" fill="#D9D9D9"/>
+        <rect x="160" y="90" width="10" height="12" fill="var(--color-orange)"/>
+        <rect x="180" y="90" width="10" height="12" fill="#D9D9D9"/>
+
+        <!-- building group 2 -->
+        <rect x="210" y="55" width="80" height="95" fill="#E9E9E9"/>
+        <rect x="222" y="68" width="14" height="14" fill="#D9D9D9"/>
+        <rect x="244" y="68" width="14" height="14" fill="var(--color-orange)"/>
+        <rect x="266" y="68" width="14" height="14" fill="#D9D9D9"/>
+        <rect x="222" y="92" width="14" height="14" fill="var(--color-orange)"/>
+        <rect x="244" y="92" width="14" height="14" fill="#D9D9D9"/>
+
+        <rect x="300" y="95" width="55" height="55" fill="#EDEDED"/>
+        <rect x="310" y="108" width="10" height="14" fill="var(--color-orange)"/>
+
+        <!-- clock tower centerpiece -->
+        <rect x="365" y="40" width="60" height="110" fill="#E4E4E4"/>
+        <polygon points="365,40 395,15 425,40" fill="#D9D9D9"/>
+        <circle cx="395" cy="60" r="14" fill="#F5F5F5" stroke="var(--color-orange)" stroke-width="2"/>
+        <rect x="378" y="90" width="12" height="16" fill="var(--color-orange)"/>
+        <rect x="400" y="90" width="12" height="16" fill="#D9D9D9"/>
+        <rect x="378" y="114" width="12" height="16" fill="#D9D9D9"/>
+        <rect x="400" y="114" width="12" height="16" fill="var(--color-orange)"/>
+
+        <!-- building group 3 -->
+        <rect x="435" y="80" width="50" height="70" fill="#E9E9E9"/>
+        <rect x="500" y="60" width="70" height="90" fill="#EDEDED"/>
+        <rect x="512" y="74" width="14" height="14" fill="var(--color-orange)"/>
+        <rect x="534" y="74" width="14" height="14" fill="#D9D9D9"/>
+        <rect x="512" y="98" width="14" height="14" fill="#D9D9D9"/>
+        <rect x="534" y="98" width="14" height="14" fill="var(--color-orange)"/>
+
+        <rect x="580" y="95" width="45" height="55" fill="#E4E4E4"/>
+
+        <!-- van / small graphic -->
+        <rect x="640" y="128" width="34" height="16" rx="2" fill="#D9D9D9"/>
+        <circle cx="649" cy="146" r="4" fill="#B8B8B8"/>
+        <circle cx="665" cy="146" r="4" fill="#B8B8B8"/>
+
+        <!-- lamp post -->
+        <rect x="700" y="90" width="3" height="60" fill="#C9C9C9"/>
+        <circle cx="701.5" cy="88" r="5" fill="var(--color-orange)"/>
+
+        <!-- building group 4 -->
+        <rect x="730" y="70" width="60" height="80" fill="#E9E9E9"/>
+        <rect x="742" y="84" width="12" height="14" fill="#D9D9D9"/>
+        <rect x="764" y="84" width="12" height="14" fill="var(--color-orange)"/>
+
+        <rect x="800" y="55" width="75" height="95" fill="#EDEDED"/>
+        <rect x="812" y="68" width="14" height="14" fill="var(--color-orange)"/>
+        <rect x="834" y="68" width="14" height="14" fill="#D9D9D9"/>
+        <rect x="856" y="68" width="14" height="14" fill="#D9D9D9"/>
+        <rect x="812" y="92" width="14" height="14" fill="#D9D9D9"/>
+        <rect x="834" y="92" width="14" height="14" fill="var(--color-orange)"/>
+
+        <rect x="885" y="95" width="55" height="55" fill="#E4E4E4"/>
+
+        <!-- big centerpiece building with arched top -->
+        <rect x="950" y="65" width="90" height="85" fill="#EDEDED"/>
+        <path d="M950 65 Q995 30 1040 65 Z" fill="#D9D9D9"/>
+        <circle cx="995" cy="60" r="8" fill="#F5F5F5" stroke="var(--color-orange)" stroke-width="2"/>
+        <rect x="965" y="90" width="14" height="18" fill="var(--color-orange)"/>
+        <rect x="990" y="90" width="14" height="18" fill="#D9D9D9"/>
+        <rect x="1013" y="90" width="14" height="18" fill="#D9D9D9"/>
+
+        <rect x="1050" y="90" width="50" height="60" fill="#E9E9E9"/>
+
+        <!-- building group 5 -->
+        <rect x="1110" y="75" width="60" height="75" fill="#EDEDED"/>
+        <rect x="1122" y="88" width="12" height="14" fill="#D9D9D9"/>
+        <rect x="1144" y="88" width="12" height="14" fill="var(--color-orange)"/>
+
+        <rect x="1180" y="95" width="120" height="55" fill="#E4E4E4"/>
+        <rect x="1195" y="108" width="14" height="14" fill="var(--color-orange)"/>
+        <rect x="1217" y="108" width="14" height="14" fill="#D9D9D9"/>
+        <rect x="1239" y="108" width="14" height="14" fill="#D9D9D9"/>
+        <rect x="1261" y="108" width="14" height="14" fill="var(--color-orange)"/>
+      </svg>
+    </div>
+
+    <!-- Dark four-column bar -->
+    <div class="footer-bar">
+      <div class="footer-bar-container">
+
+        <!-- COLUMN 1: QUICK LINKS -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <nav class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#ourservices">Services</a>
+            <a href="#products">Products</a>
+            <a href="#cctv">CCTV</a>
+            <a href="#networking">Networking</a>
+          </nav>
+        </div>
+
+        <!-- COLUMN 2: GET SOCIAL -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">GET SOCIAL</h4>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-icon" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 9H16V6H13.5C11.6 6 10 7.6 10 9.5V11H8V14H10V21H13V14H15.5L16 11H13V9.5C13 9.2 13.2 9 13.5 9Z"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12C2 13.8 2.5 15.5 3.3 17L2 22L7.2 20.7C8.6 21.5 10.3 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2ZM12 20.2C10.5 20.2 9.1 19.8 7.9 19L7.6 18.8L4.3 19.7L5.2 16.5L5 16.2C4.1 14.9 3.6 13.5 3.6 12C3.6 7.4 7.4 3.6 12 3.6C16.6 3.6 20.2 7.4 20.2 12C20.2 16.6 16.6 20.2 12 20.2Z"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="M10 9.5L15 12L10 14.5V9.5Z" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+
+          <div class="footer-rating">
+            <span class="footer-rating-stars">★★★★★</span>
+            <span class="footer-rating-score">4.7 Rating</span>
+          </div>
+        </div>
+
+        <!-- COLUMN 3: GET IN TOUCH -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">GET IN TOUCH</h4>
+          <p class="footer-text">Angel Computers &amp; Enterprises</p>
+          <p class="footer-text">
+            No 68, B S.S.S. Complex, Near YMCA Corner,<br />
+            Mount Road, Coonoor - 643101,<br />
+            Tamil Nadu
+          </p>
+          <p class="footer-text">
+            <a href="tel:+918940611143">8940611143</a> &nbsp;|&nbsp; <a href="tel:+918825296949">8825296949</a>
+          </p>
+        </div>
+
+        <!-- COLUMN 4: PROJECT INQUIRIES -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">PROJECT INQUIRIES</h4>
+          <p class="footer-text">
+            <a href="mailto:ace.coonoor@gmail.com" class="footer-email">ace.coonoor@gmail.com</a>
+          </p>
+          <a href="#contact" class="btn btn-footer-enquire">ENQUIRE NOW</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Angel Computers &amp; Enterprises. All rights reserved.</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+    <!-- ============================= -->
+  <!-- CONTACT POPUP MODAL           -->
+  <!-- ============================= -->
+  <div class="cmodal-overlay" id="cmodalOverlay">
+    <div class="cmodal-box">
+
+      <button class="cmodal-close" id="cmodalClose" aria-label="Close">&times;</button>
+
+      <!-- LEFT PANEL: OFFER / INFO -->
+      <div class="cmodal-left">
+        <span class="cmodal-brand">Angel Computers</span>
+        <h3 class="cmodal-heading">Let's Get <br />You Connected</h3>
+
+        <ul class="cmodal-perks">
+          <li>19+ years of trusted service</li>
+          <li>Free on-site consultation</li>
+          <li>2000+ happy connections</li>
+        </ul>
+
+        <p class="cmodal-desc">
+          Internet, CCTV, networking &amp; computer solutions —
+          all under one roof, backed by real support.
+        </p>
+
+        <a href="tel:+918940611143" class="cmodal-call-btn">
+          Call Us Now <span>→</span>
+        </a>
+      </div>
+
+      <!-- RIGHT PANEL: CONTACT FORM -->
+      <div class="cmodal-right">
+        <h3 class="cmodal-form-title">Contact Us</h3>
+
+        <form class="cmodal-form" id="cmodalForm" action="https://formspree.io/f/maenbvvd" method="POST" novalidate>
+
+          <div class="cmodal-row">
+            <div class="cmodal-field">
+              <input type="text" name="firstName" placeholder="First Name" required minlength="2" />
+              <span class="cmodal-error" data-for="firstName"></span>
+            </div>
+            <div class="cmodal-field">
+              <input type="text" name="lastName" placeholder="Last Name" required minlength="1" />
+              <span class="cmodal-error" data-for="lastName"></span>
+            </div>
+          </div>
+
+          <div class="cmodal-row">
+            <div class="cmodal-field">
+              <input type="email" name="email" placeholder="E-mail" required />
+              <span class="cmodal-error" data-for="email"></span>
+            </div>
+            <div class="cmodal-field">
+              <input type="tel" name="phone" placeholder="Phone Number" required />
+              <span class="cmodal-error" data-for="phone"></span>
+            </div>
+          </div>
+
+          <div class="cmodal-field cmodal-field-full">
+            <textarea name="message" rows="4" placeholder="Tell us what you need..." required minlength="10"></textarea>
+            <span class="cmodal-error" data-for="message"></span>
+          </div>
+
+          <!-- Honeypot spam trap -->
+          <input type="text" name="_gotcha" class="cmodal-honeypot" tabindex="-1" autocomplete="off" />
+
+          <button type="submit" class="btn-cmodal-submit" id="cmodalSubmitBtn">
+            <span class="btn-text">SUBMIT NOW</span>
+            <span class="btn-arrow">→</span>
+            <span class="btn-spinner"></span>
+          </button>
+
+          <p class="cmodal-status" id="cmodalStatus"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+    <!-- ============================= -->
+  <!-- FLOATING CONTACT BUTTONS      -->
+  <!-- (fixed, stays in place while  -->
+  <!--  scrolling)                   -->
+  <!-- ============================= -->
+  <div class="fab-widget" id="fabWidget">
+
+    <!-- These three start hidden and pop up when the "?" is clicked -->
+    <a href="tel:+918940611143" class="fab-item fab-call" aria-label="Call us">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9V19.9C22 20.5 21.5 21 20.9 21C10.4 21 2 12.6 2 2.1C2 1.5 2.5 1 3.1 1H6.1C6.6 1 7.1 1.4 7.1 1.9C7.2 3.2 7.5 4.5 7.9 5.7C8.1 6.2 7.9 6.8 7.5 7.1L5.9 8.3C7.1 11 9.1 13 11.7 14.2L12.9 12.6C13.3 12.1 13.9 12 14.4 12.2C15.6 12.6 16.9 12.9 18.2 13C18.7 13.1 19.1 13.5 19.1 14V16.9"/></svg>
+    </a>
+
+    <a href="https://wa.me/918940611143" target="_blank" rel="noopener" class="fab-item fab-whatsapp" aria-label="WhatsApp us">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12C2 13.8 2.5 15.5 3.3 17L2 22L7.2 20.7C8.6 21.5 10.3 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2ZM12 20.2C10.5 20.2 9.1 19.8 7.9 19L7.6 18.8L4.3 19.7L5.2 16.5L5 16.2C4.1 14.9 3.6 13.5 3.6 12C3.6 7.4 7.4 3.6 12 3.6C16.6 3.6 20.2 7.4 20.2 12C20.2 16.6 16.6 20.2 12 20.2Z"/></svg>
+    </a>
+
+    <a href="mailto:ace.coonoor@gmail.com" class="fab-item fab-email" aria-label="Email us">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6L12 13L22 6"/></svg>
+    </a>
+
+    <!-- Main "?" toggle button -->
+    <button class="fab-main" id="fabMain" aria-label="Contact options">
+      <span class="fab-question">?</span>
+      <span class="fab-close-icon">&times;</span>
+    </button>
+
+  </div>
+  <!-- ============================= -->
+  <!-- FUTURE SECTIONS GO HERE       -->
+  <!-- Add new <section> blocks below, e.g.:
+       <section class="about" id="about"> ... </section>
+       <section class="services" id="services"> ... </section>
+  -->
+  <!-- ============================= -->
+
+
+  <!-- Our own JS file, loaded at the end so the HTML is ready first -->
+  <script src="script.js"></script>
+</body>
+</html>
